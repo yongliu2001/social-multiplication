@@ -24,8 +24,7 @@ function updateStats(alias) {
         data.forEach(function (row) {
             $('#stats-body').append('<tr>' +
                 '<td>' + row.id + '</td>' +
-                '<td>' + row.multiplication.factorA + '</td>' +
-                '<td>' + row.multiplication.factorB + '</td>' +
+                '<td>' + row.multiplication.factorA + 'X' + row.multiplication.factorB + '</td>' +
                 '<td>' + row.resultAttempt + '</td>' +
                 '<td>' + (row.correct === true ? 'YES' : 'NO') + '</td></tr>')
         });
